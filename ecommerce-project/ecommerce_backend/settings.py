@@ -296,6 +296,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://icompaas.vercel.app",  # Add your React app URL later
 ]
 
+# Add these for better CORS handling
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = False
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
