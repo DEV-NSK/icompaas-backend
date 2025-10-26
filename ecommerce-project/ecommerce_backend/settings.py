@@ -247,6 +247,9 @@ DATABASES = {
     )
 }
 
+# Add this line for psycopg3
+DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql'
+
 # Stripe
 STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
