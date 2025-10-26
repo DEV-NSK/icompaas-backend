@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 # build.sh
 
-echo "Building the project..."
+echo "=== Starting Build Process ==="
 
-# Install dependencies
+# Install dependencies from requirements.txt
+echo "Installing dependencies..."
 pip install -r requirements.txt
 
-# Collect static files
-python manage.py collectstatic --noinput
-
 # Apply database migrations
+echo "Applying database migrations..."
 python manage.py migrate
+
+# Collect static files
+echo "Collecting static files..."
+python manage.py collectstatic --noinput --clear
+
+echo "=== Build Completed Successfully ==="
