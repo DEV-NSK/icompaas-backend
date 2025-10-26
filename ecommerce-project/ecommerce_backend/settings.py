@@ -293,7 +293,7 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  
     "http://127.0.0.1:5173",
-    "https://icompaas.vercel.app/",  # Add your React app URL later
+    "https://icompaas.vercel.app",  # Add your React app URL later
 ]
 
 # Media files
