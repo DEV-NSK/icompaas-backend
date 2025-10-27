@@ -362,7 +362,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
 # FIX: Don't hardcode DEBUG to False
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['ecommerce-backend-xyz.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['icompaas-backend-3.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
