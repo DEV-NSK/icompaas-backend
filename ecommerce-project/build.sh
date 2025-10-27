@@ -1,18 +1,18 @@
-# #!/usr/bin/env bash
-# # build.sh
+#!/usr/bin/env bash
+# build.sh
 
-# echo "=== Starting Build Process ==="
+echo "=== Starting Build Process ==="
 
-# # Install dependencies from requirements.txt
-# echo "Installing dependencies..."
-# pip install -r requirements.txt
+# Install dependencies from requirements.txt
+echo "Installing dependencies..."
+pip install -r requirements.txt
 
-# # Apply database migrations
-# echo "Applying database migrations..."
-# python manage.py migrate
+# Apply database migrations
+echo "Applying database migrations..."
+python manage.py migrate
 
-# # Collect static files
-# echo "Collecting static files..."
-# python manage.py collectstatic --noinput --clear
+# Collect static files
+echo "Collecting static files..."
+python manage.py collectstatic --noinput --clear
 
-# echo "=== Build Completed Successfully ==="
+echo "=== Build Completed Successfully ==="
